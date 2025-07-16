@@ -107,7 +107,8 @@ Definition: One interface, many implementations
 
 ## 🔧 Code
 
-```python
+---
+python
 class Bird:
     def fly(self):
         print("Bird flies high")
@@ -146,10 +147,11 @@ class Square(Shape):
 
     def area(self):
         return self.side * self.side
+
 sq = Square(5)
 print(sq.area())  # 25
 
-s = Shape()    ❌ Error: can't instantiate abstract class
+s = Shape()  # ❌ Error: Can't instantiate abstract class
 
 
 #Hope you have a better understanding now!
