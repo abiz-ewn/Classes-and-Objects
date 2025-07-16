@@ -105,7 +105,9 @@ Definition: One interface, many implementations
 - **Same method name works differently for different classes**
 - **Achieved via method overriding**
 
-Code Example:
+## 🔧 Code
+
+```python
 class Bird:
     def fly(self):
         print("Bird flies high")
@@ -120,8 +122,9 @@ def flying_test(thing):
 b = Bird()
 a = Airplane()
 
-flying_test(b)   # Bird flies high
-flying_test(a)   # Airplane flies faster
+flying_test(b)  # Bird flies high
+flying_test(a)  # Airplane flies faster
+
 
 ## 🧩 4. Abstraction
 Definition: Hiding complex details and showing only essentials
