@@ -74,7 +74,7 @@ class BankAccount:
 acc = BankAccount("John", 1000)
 acc.deposit(500)
 print(acc.get_balance())     # 1500
-# print(acc.__balance)       # ❌ Error: can't access private variable
+print(acc.__balance)        ❌ Error: can't access private variable
 
 ## 🧬 2. Inheritance
 Definition: One class (child) inherits features from another (parent)
