@@ -72,8 +72,11 @@ class BankAccount:
     def get_balance(self):
         return self.__balance
 acc = BankAccount("John", 1000)
+
 acc.deposit(500)
+
 print(acc.get_balance())     # 1500
+
 print(acc.__balance)        ❌ Error: can't access private variable
 
 ## 🧬 2. Inheritance
@@ -143,7 +146,7 @@ class Square(Shape):
 sq = Square(5)
 print(sq.area())  # 25
 
-# s = Shape()    # ❌ Error: can't instantiate abstract class
+s = Shape()    ❌ Error: can't instantiate abstract class
 
 
 #Hope you have a better understanding now!
