@@ -53,8 +53,8 @@ Let’s look at each one with a short explanation and example.
 
 **Definition:** Wrapping data and code together, hiding internal details.
 
-- Done using private variables (`_` or `__`)
-- Prevents outside access to sensitive data directly
+- **Done using private variables (`_` or `__`)**
+- **Prevents outside access to sensitive data directly**
 
 **Code Example:**
 
@@ -79,8 +79,8 @@ print(acc.get_balance())     # 1500
 ## 🧬 2. Inheritance
 Definition: One class (child) inherits features from another (parent)
 
-**Promotes code reuse**
-**Child class can override parent methods**
+- **Promotes code reuse**
+- **Child class can override parent methods**
 
 Code Example:
 class Animal:
@@ -99,8 +99,8 @@ d.speak()   # Bark (overridden method)
 
 ##  🎭 3. Polymorphism
 Definition: One interface, many implementations
-**Same method name works differently for different classes**
-**Achieved via method overriding**
+- **Same method name works differently for different classes**
+- **Achieved via method overriding**
 
 Code Example:
 class Bird:
@@ -122,8 +122,8 @@ flying_test(a)   # Airplane flies faster
 
 ## 🧩 4. Abstraction
 Definition: Hiding complex details and showing only essentials
-**Implemented using abstract base classes with @abstractmethod**
-**Forces subclasses to implement certain methods**
+- **Implemented using abstract base classes with @abstractmethod**
+- **Forces subclasses to implement certain methods**
 
 Code Example:
 
