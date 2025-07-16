@@ -9,7 +9,7 @@ It includes:
 
 ---
 
-## 🧱 Part 1: Simple Python Class with Full Explanation
+## 🧱 Part 1: Simple Python Class Explanation
 
 --- 
 python
@@ -146,4 +146,4 @@ print(sq.area())  # 25
 # s = Shape()    # ❌ Error: can't instantiate abstract class
 
 
-
+#Hope you have a better understanding now!
