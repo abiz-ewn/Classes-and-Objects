@@ -53,7 +53,7 @@ Let’s look at each one with a short explanation and example.
 
 **Definition:** Wrapping data and code together, hiding internal details.
 
-- **Done using private variables (`_` or `__`)**
+- **Done using private variables**
 - **Prevents outside access to sensitive data directly**
 
 **Code Example:**
