@@ -137,7 +137,7 @@ Code Example:
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
-    @abstractmethod
+    #abstractmethod
     def area(self):
         pass
 
