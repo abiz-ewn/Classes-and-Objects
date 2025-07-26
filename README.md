@@ -59,26 +59,26 @@ Let’s look at each one with a short explanation and example.
 - **Prevents outside access to sensitive data directly**
 
 **Code Example:**
----
-python
 class BankAccount:
-  def __init__(self, owner, balance):
+    def __init__(self, owner, balance):
         self.owner = owner
         self.__balance = balance  # Private variable
-   def deposit(self, amount):
+
+    def deposit(self, amount):
         if amount > 0:
             self.__balance += amount
 
     def get_balance(self):
         return self.__balance
-        
+
 acc = BankAccount("John", 1000)
 
 acc.deposit(500)
 
-print(acc.get_balance())     # 1500
+print(acc.get_balance())  # ✅ 1500
 
-print(acc.__balance)        ❌ Error: can't access private variable
+print(acc.__balance)      # ❌ Error: cannot access private variable
+
 
 ## 🧬 2. Inheritance
 Definition: One class (child) inherits features from another (parent)
@@ -86,7 +86,6 @@ Definition: One class (child) inherits features from another (parent)
 - **Promotes code reuse**
 - **Child class can override parent methods**
 
-Code Example:
 class Animal:
     def speak(self):
         print("Some sound")
@@ -94,12 +93,13 @@ class Animal:
 class Dog(Animal):
     def speak(self):
         print("Bark")
-        
+
 a = Animal()
-a.speak()   # Some sound
+a.speak()  # Output: Some sound
 
 d = Dog()
-d.speak()   # Bark (overridden method)
+d.speak()  # Output: Bark
+
 
 ##  🎭 3. Polymorphism
 Definition: One interface, many implementations
@@ -108,8 +108,6 @@ Definition: One interface, many implementations
 
 ## 🔧 Code
 
----
-python
 class Bird:
     def fly(self):
         print("Bird flies high")
@@ -124,8 +122,9 @@ def flying_test(thing):
 b = Bird()
 a = Airplane()
 
-flying_test(b)  # Bird flies high
-flying_test(a)  # Airplane flies faster
+flying_test(b)  # Output: Bird flies high
+flying_test(a)  # Output: Airplane flies faster
+
 
 
 ## 🧩 4. Abstraction
@@ -138,7 +137,7 @@ Code Example:
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
-    #abstractmethod
+    @abstractmethod
     def area(self):
         pass
 
@@ -150,9 +149,10 @@ class Square(Shape):
         return self.side * self.side
 
 sq = Square(5)
-print(sq.area())  # 25
+print(sq.area())  # Output: 25
 
-s = Shape()  # ❌ Error: Can't instantiate abstract class, because it's not calling a variable
+s = Shape()  # ❌ Error: Can't instantiate abstract class
+
 
 
 #Hope you have a better understanding now!
