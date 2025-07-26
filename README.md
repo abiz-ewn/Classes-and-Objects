@@ -24,6 +24,8 @@ class Car:
 
     def drive(self):
         print(f"The {self.color} {self.brand} is driving.")
+        my_car = Car("Toyota", "blue")
+my_car.drive()   # Output: The blue Toyota is driving.
 | Component                  | Type               | Description                                 |
 | -------------------------- | ------------------ | ------------------------------------------- |
 | `class Car:`               | Class definition   | Creates a new class called `Car`            |
@@ -57,20 +59,19 @@ Let’s look at each one with a short explanation and example.
 - **Prevents outside access to sensitive data directly**
 
 **Code Example:**
-
 ---
 python
 class BankAccount:
-    def __init__(self, owner, balance):
+  def __init__(self, owner, balance):
         self.owner = owner
         self.__balance = balance  # Private variable
-
-    def deposit(self, amount):
+   def deposit(self, amount):
         if amount > 0:
             self.__balance += amount
 
     def get_balance(self):
         return self.__balance
+        
 acc = BankAccount("John", 1000)
 
 acc.deposit(500)
@@ -151,7 +152,7 @@ class Square(Shape):
 sq = Square(5)
 print(sq.area())  # 25
 
-s = Shape()  # ❌ Error: Can't instantiate abstract class
+s = Shape()  # ❌ Error: Can't instantiate abstract class, because it's not calling a variable
 
 
 #Hope you have a better understanding now!
