@@ -9,13 +9,21 @@ It includes:
 
 ---
 
-## 🧱 Part 1: Simple Python Class Explanation
+# 🐍 Python OOP Basics: Classes and the 4 Pillars of OOP
 
---- 
-python
+This repository provides a beginner-friendly introduction to **Object-Oriented Programming (OOP)** in Python.  
+It includes:
+
+- ✅ A simple class example with full inline explanation  
+- ✅ The **4 Pillars of OOP** with definitions directly next to code
+
+---
+
+## 🧱 Part 1: Simple Python Class Explained
+
+```python
 class Car:
-    # Class variable (shared across all objects)
-    wheels = 4
+    wheels = 4  # Class variable (shared across all objects)
 
     def __init__(self, brand, color):
         # Instance variables (unique to each object)
@@ -23,8 +31,12 @@ class Car:
         self.color = color
 
     def drive(self):
+        # Method to simulate driving
         print(f"The {self.color} {self.brand} is driving.")
-        my_car = Car("Toyota", "blue")
+
+my_car = Car("Toyota", "blue")  # Creating an object of Car
+my_car.drive()                  # Output: The blue Toyota is driving.
+
 my_car.drive()   # Output: The blue Toyota is driving.
 | Component                  | Type               | Description                                 |
 | -------------------------- | ------------------ | ------------------------------------------- |
@@ -35,8 +47,7 @@ my_car.drive()   # Output: The blue Toyota is driving.
 | `self`                     | Reference          | Refers to the current object                |
 | `drive()`                  | Method             | Function defined inside the class           |
 
-my_car = Car("Toyota", "blue")
-my_car.drive()   # Output: The blue Toyota is driving.
+
 
 ## 🧠 Part 2: The 4 Pillars of Object-Oriented Programming (OOP)
 
